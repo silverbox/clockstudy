@@ -1,0 +1,19 @@
+FROM ubuntu:18.04
+
+MAINTAINER tanaka_e@works-hi.co.jp
+
+WORKDIR /vue/erules
+
+RUN apt-get update
+RUN apt-get install -y curl gnupg openssh-server openssh-client
+RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+RUN sh -c "echo deb https://deb.nodesource.com/node_12.x bionic main > /etc/apt/sources.list.d/nodesource.list"
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN npm install -g @vue/cli
+RUN npm install -g @vue/cli-init
+# RUN npm install element-ui --save
+# RUN npm install axios --save
+# RUN npm install vue-gapi --save
+
+# CMD ["npm", "run", "build"]

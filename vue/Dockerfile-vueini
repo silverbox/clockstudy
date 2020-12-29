@@ -1,0 +1,23 @@
+FROM ubuntu:18.04
+
+MAINTAINER tanaka_e@works-hi.co.jp
+
+WORKDIR /vue
+
+RUN apt-get update
+RUN apt-get install -y curl gnupg openssh-server openssh-client
+RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+RUN sh -c "echo deb https://deb.nodesource.com/node_12.x bionic main > /etc/apt/sources.list.d/nodesource.list"
+RUN apt-get update
+RUN apt-get install -y nodejs
+RUN npm install -g @vue/cli
+RUN npm install -g @vue/cli-init
+
+# docker 内部で実行
+# /vue 直下にて
+
+# vue create clockstudy
+# 設定個別を選択。TypeScriptを使う。
+# ライブラリインストール
+# /vue/clockstudy 直下にて
+# vue add vuetify

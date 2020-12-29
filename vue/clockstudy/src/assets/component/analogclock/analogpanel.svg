@@ -1,0 +1,158 @@
+<svg class="analogclock" data-name="analogclock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <defs>
+        <style>.cls-1{fill:#1697f6;}.cls-2{fill:#7bc6ff;}.cls-3{fill:#1867c0;}.cls-4{fill:#aeddff;}</style>
+    </defs>
+    <title>Analog clock</title>
+    <g class="hourScale" stroke="red" stroke-width="3">
+        <line x1="200" y1="60" x2="200" y2="75" transform="rotate(360 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(30 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(60 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="75" transform="rotate(90 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(120 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(150 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="75" transform="rotate(180 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(210 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(240 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="75" transform="rotate(270 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(300 200 200)" />
+        <line x1="200" y1="60" x2="200" y2="70" transform="rotate(330 200 200)" />
+    </g>
+    <g class="hourText" font-size="12" stroke="red">
+        <text x="195.00" y="55.00">12</text>
+        <text x="270.00" y="75.10">1</text>
+        <text x="324.90" y="130.00">2</text>
+        <text x="345.00" y="205.00">3</text>
+        <text x="324.90" y="280.00">4</text>
+        <text x="270.00" y="334.90">5</text>
+        <text x="195.00" y="355.00">6</text>
+        <text x="120.00" y="334.90">7</text>
+        <text x="65.10" y="280.00">8</text>
+        <text x="45.00" y="205.00">9</text>
+        <text x="65.10" y="130.00">10</text>
+        <text x="120.00" y="75.10">11</text>
+    </g>
+    <g class="minScale" stroke="blue" stroke-width="3">
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(360 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(6 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(12 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(18 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(24 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(30 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(36 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(42 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(48 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(54 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(60 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(66 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(72 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(78 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(84 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(90 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(96 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(102 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(108 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(114 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(120 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(126 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(132 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(138 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(144 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(150 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(156 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(162 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(168 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(174 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(180 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(186 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(192 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(198 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(204 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(210 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(216 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(222 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(228 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(234 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(240 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(246 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(252 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(258 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(264 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(270 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(276 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(282 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(288 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(294 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(300 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(306 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(312 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(318 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(324 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="35" transform="rotate(330 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(336 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(342 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(348 200 200)" />
+        <line x1="200" y1="20" x2="200" y2="30" transform="rotate(354 200 200)" />
+    </g>
+    <g class="minText" font-size="12" stroke="blue">
+        <text x="195.00" y="15.00">60</text>
+        <text x="214.86" y="16.04">1</text>
+        <text x="234.50" y="19.15">2</text>
+        <text x="253.71" y="24.30">3</text>
+        <text x="272.28" y="31.43">4</text>
+        <text x="290.00" y="40.46">5</text>
+        <text x="306.68" y="51.29">6</text>
+        <text x="322.13" y="63.80">7</text>
+        <text x="336.20" y="77.87">8</text>
+        <text x="348.71" y="93.32">9</text>
+        <text x="359.54" y="110.00">10</text>
+        <text x="368.57" y="127.72">11</text>
+        <text x="375.70" y="146.29">12</text>
+        <text x="380.85" y="165.50">13</text>
+        <text x="383.96" y="185.14">14</text>
+        <text x="385.00" y="205.00">15</text>
+        <text x="383.96" y="224.86">16</text>
+        <text x="380.85" y="244.50">17</text>
+        <text x="375.70" y="263.71">18</text>
+        <text x="368.57" y="282.28">19</text>
+        <text x="359.54" y="300.00">20</text>
+        <text x="348.71" y="316.68">21</text>
+        <text x="336.20" y="332.13">22</text>
+        <text x="322.13" y="346.20">23</text>
+        <text x="306.68" y="358.71">24</text>
+        <text x="290.00" y="369.54">25</text>
+        <text x="272.28" y="378.57">26</text>
+        <text x="253.71" y="385.70">27</text>
+        <text x="234.50" y="390.85">28</text>
+        <text x="214.86" y="393.96">29</text>
+        <text x="195.00" y="395.00">30</text>
+        <text x="175.14" y="393.96">31</text>
+        <text x="155.50" y="390.85">32</text>
+        <text x="136.29" y="385.70">33</text>
+        <text x="117.72" y="378.57">34</text>
+        <text x="100.00" y="369.54">35</text>
+        <text x="83.32" y="358.71">36</text>
+        <text x="67.87" y="346.20">37</text>
+        <text x="53.80" y="332.13">38</text>
+        <text x="41.29" y="316.68">39</text>
+        <text x="30.46" y="300.00">40</text>
+        <text x="21.43" y="282.28">41</text>
+        <text x="14.30" y="263.71">42</text>
+        <text x="09.15" y="244.50">43</text>
+        <text x="06.04" y="224.86">44</text>
+        <text x="05.00" y="205.00">45</text>
+        <text x="06.04" y="185.14">46</text>
+        <text x="09.15" y="165.50">47</text>
+        <text x="14.30" y="146.29">48</text>
+        <text x="21.43" y="127.72">49</text>
+        <text x="30.46" y="110.00">50</text>
+        <text x="41.29" y="93.32">51</text>
+        <text x="53.80" y="77.87">52</text>
+        <text x="67.87" y="63.80">53</text>
+        <text x="83.32" y="51.29">54</text>
+        <text x="100.00" y="40.46">55</text>
+        <text x="117.72" y="31.43">56</text>
+        <text x="136.29" y="24.30">57</text>
+        <text x="155.50" y="19.15">58</text>
+        <text x="175.14" y="16.04">59</text>
+    </g>
+</svg>

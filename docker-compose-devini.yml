@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  frontvue:
+    build:
+      context: ./vue
+      dockerfile: Dockerfile-vueini
+    ports:
+      - 8080:8080
+    volumes:
+      - ./vue/:/vue/
+    container_name: clockstudy-vue-dev
+    tty: true
