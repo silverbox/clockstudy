@@ -7,10 +7,13 @@
           height="401"
           width="401"
           :minutes="curMins"
+          :animate="useAnimation"
         />
-        <v-row class="text-center">
-          <v-col cols="12">
-            <span>時間</span>
+        <v-row align="center">
+          <v-col cols="5" class="text-right">
+            <span>じかん</span>
+          </v-col>
+          <v-col cols="7" class="text-left">
             <v-btn-toggle
               v-model="hourValue"
               class="transparent"
@@ -22,9 +25,11 @@
             </v-btn-toggle>
           </v-col>
         </v-row>
-        <v-row class="text-center">
-          <v-col cols="12">
-            <span>分</span>
+        <v-row align="center">
+          <v-col cols="5" class="text-right">
+            <span>ふん</span>
+          </v-col>
+          <v-col cols="7" class="text-left">
             <v-btn-toggle
               v-model="minValue"
               class="transparent"
@@ -44,7 +49,7 @@
         </v-row>
         <v-row class="text-center">
           <v-col cols="12">
-            <div v-text="curTime" />
+            <div class="display-1" v-text="curTime" />
           </v-col>
         </v-row>
       </v-container>
@@ -53,7 +58,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator"
+import { Vue, Component } from "vue-property-decorator"
 
 import AnalogClock from './components/AnalogClock.vue';
 
@@ -63,28 +68,44 @@ import AnalogClock from './components/AnalogClock.vue';
   }
 })
 export default class App extends Vue {
-  name: 'App'
+  name = 'App'
   curMins = 0
   hourValue = 0
   minValue = 30
-  curTime = "0 じ 0 ふんです"
+  curTime = "12 じ 0 ふんです"
+  useAnimation = true
+
+  timeoutId = -1
 
   onAdd(): void {
-    const wkMins = this.curMins + this.minValue + (this.hourValue * 60)
-    // this.curMins = (wkMins + 720) % 720
-    this.curMins = wkMins
-    this.setCurTime()
+    this.setCurTime(true)
   }
   onDel(): void {
-    const wkMins = this.curMins - this.minValue - (this.hourValue * 60)
-    // this.curMins = (wkMins + 720) % 720
-    this.curMins = wkMins
-    this.setCurTime()
+    this.setCurTime(false)
   }
-  setCurTime(): void {
+  setCurTime(isAdd: boolean): void {
+    const wkMins = isAdd ? (this.curMins + this.minValue + (this.hourValue * 60)) : (this.curMins - this.minValue - (this.hourValue * 60))
+    this.useAnimation = true
+    this.curMins = wkMins
+
     const wkHour = Math.floor(((this.curMins + 72000) % 720) / 60)
     const wkMin = ((this.curMins + 72000) % 60)
-     this.curTime = wkHour + " じ " + wkMin + " ふんです"
+    const wkHour2 = (wkHour == 0 ? 12 : wkHour)
+    const wkMinStr = wkMin == 0 ? "" : (wkMin + " ふん")
+    this.curTime = wkHour2 + " じ " + wkMinStr + "です"
+
+    if (this.timeoutId != -1) {
+      clearTimeout(this.timeoutId)
+    }
+
+    this.timeoutId = setTimeout(function(this: any){
+      const wkMins = (this.curMins + 720) % 720
+      if (wkMins != this.curMins) {
+        this.useAnimation = false
+        this.curMins = wkMins
+      }
+      this.timeoutId = -1
+    }.bind(this), 2000)
   }
 }
 </script>

@@ -10,11 +10,12 @@ sudo docker-compose -f docker-compose-dev.yml build
 sudo docker-compose -f docker-compose-dev.yml up
 ```
 
+コンテナにログインする
 ```
 sudo docker exec -it clockstudy-vue-dev bash
 ```
 
-コンテナ中で
+コンテナ中(/vue/clockstudy 配下)で
 ```
 npm run serve
 ```

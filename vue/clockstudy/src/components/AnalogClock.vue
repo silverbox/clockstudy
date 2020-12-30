@@ -31,21 +31,13 @@ import { Vue, Component, Prop } from "vue-property-decorator"
 
 @Component
 export default class AnalogClock extends Vue {
-  name: 'analog-clock'
+  name = 'analog-clock'
+
   @Prop() readonly title!: string
   @Prop() readonly minutes!: number
-  // @Prop() readonly hour!: number
-  // @Prop() readonly minute!: number
   @Prop() readonly height!: number
   @Prop() readonly width!: number
-
-  message = "This is a message"
-
-  /** lifecycle hook */
-  mounted(): void {
-    console.log('mounted')
-    // this.refreshHand()
-  }
+  @Prop() readonly animate!: boolean
 
   get getOutlineStyle (): string {
     return "margin:auto;height:" + this.height + "px;width:" + this.width + "px;"
@@ -53,28 +45,19 @@ export default class AnalogClock extends Vue {
 
   get getHourHandStyle (): string {
     const hourDeg = this.minutes / 2
-    console.log(hourDeg)
-    return "position:absolute; transform:rotate(" + hourDeg + "deg);transition: all 1000ms 0s ease;"
+    return "position:absolute; transform:rotate(" + hourDeg + "deg);" + this.getTransitionCss()
   }
 
   get getMinHandStyle (): string {
-    // console.log((this.hour))
-    // console.log((this.minute))
-    return "position:absolute; transform:rotate(" + (this.minutes * 6) + "deg);transition: all 1000ms 0s ease;"
+    return "position:absolute; transform:rotate(" + (this.minutes * 6) + "deg);" + this.getTransitionCss()
   }
 
-  get getTitle (): string {
-    return this.title + this.message
+  getTransitionCss(): string {
+    if (this.animate) {
+      return "transition: all 1000ms 0s ease;"
+    } else {
+      return ""
+    }
   }
-
-  get getMessage (): string {
-    return this.message
-  }
-
-  /** methods */
-  refreshHand(): void {
-    // hourHandElem.setAttribute('transform', 'rotate(' + hourDeg + ')')
-    // minHandElem.setAttribute('transform', 'rotate(' + this.minute * 6 + ')')
-  }  
 }
 </script>
