@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER tanaka_e@works-hi.co.jp
+MAINTAINER tanaka.eiji@nifty.com
 
 WORKDIR /vue
 
