@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-MAINTAINER tanaka.eiji@nifty.com
-
 WORKDIR /vue
 
 RUN apt-get update
